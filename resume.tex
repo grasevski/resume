@@ -11,7 +11,7 @@
 \name{NICHOLAS J. GRASEVSKI\\[12pt]}     % the \\[12pt] adds a blank
 				        % line after name      
 
-\address{16A Old Forest Rd \\  Lugarno, NSW 2210
+\address{18 Eglington St \\  Lidcombe, NSW 2141
          \\  grasevski@gmail.com
          \\  0405 634 067
 	 \\  github.com/grasevski}
@@ -19,9 +19,10 @@
 \begin{resume}
 
 \section{JOB OBJECTIVE}          
-    I am a young software developer looking for a job where I can mature as an engineer and learn from experienced developers. In my ideal role I would be challenged technically and also in terms of balancing business needs with those of engineering. I am mostly interested in backend development and take pride in the code I write, however I believe it is not the tools I use that define me as a programmer, but the problems I solve.
+    I aspire to spend the rest of my career writing code and honing my craft. Technologies come and go, but I hope to master the underlying fundamentals of programming i.e. physics (hardware constraints), logic (algorithms, type theory) and statistics (scientific computing, machine learning, linear algebra, calculus, etc). I enjoy learning from experienced developers who can show me the path to this goal.
  
 \section{EDUCATION}          
+    2020-2022: Master of Data Science at USYD (part time, current WAM 86) \\
     2009-2013: Bachelor of Software Engineering with First Class Honors at UNSW (Overall WAM 79.508) \\
     2011: UNSW Computer Science Co-op scholarship \\
     2008: HSC at Caringbah Selective High School (91.6 UAI)
@@ -31,7 +32,35 @@
    \vspace{-0.1in}	
    \begin{tabbing}
    \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
-    {\bf Software Developer - C++} \>Integrated Research \>Aug 2017 - present\\
+    {\bf Developer - Javascript, Rust} \>Okta \>Aug 2021 - Present\\
+                                       \>Sydney, NSW
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+    Working in a team contributing to the development of a graphical programming language
+    designed to allow our customers to integrate their various systems with Okta's Single
+    Sign On identity application. Our team is implementing the full text search functionality
+    for the Integrated Development Environment for said programming language, for ease of
+    debugging. Personal contributions so far include provisioning the cloud infrastructure
+    for the search engine, fixing concurrency bugs and performance bugs in the existing
+    system, and implementing the plumbing code to read the logs from the interpreter for the
+    programming language and store them in the search engine.
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+    {\bf ML Engineer - Python, Go} \>Rokt \>Mar 2019 - Jun 2021\\
+                                   \>Sydney, NSW
+   \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
+    Lead developer for the realtime inference and optimization backend for advertising
+    recommendations. This allowed the ML team to quickly experiment with new algorithms and
+    deploy them autonomously, such as migrating the models from logistic regression to LightGBM,
+    changing the auction mechanics from a greedy algorithm to stochastic hill climbing algorithm
+    (which I designed and implemented), implementing a thompson sampling technique for LightGBM
+    which I invented, and various other incremental improvements, summing to about 5\% (or
+    US\$5M) additional revenue per year. Also did some work on click prediction with LightGBM,
+    developing new models and adding new features to existing ones. Last but not least, developed
+    and maintained a feature store for recording the click data, which sped up redshift model
+    training queries by 20x and reduced SQL lines of code by 3x.
+   \begin{tabbing}
+   \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+    {\bf Software Developer - C++} \>Integrated Research \>Aug 2017 - Feb 2019\\
                                    \>Sydney, NSW
    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
     Improvements and rearchitecting of VOIP monitoring software, with a focus on performance and
@@ -44,12 +73,12 @@
     {\bf Software Developer - PHP} \>Freelancer.com \>Apr 2015 - Aug 2017\\
                                    \>Sydney, NSW
    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-    Maintaining and adding features to the core payment systems in a legacy
+    Maintained and added features to the core payment systems in a legacy
     PHP code base, as well as a Python credit card handling system. Tasks
     include adding new payment methods, improving fraud detection, bug fixing,
     processing credit card data and making changes to core transaction
-    processing such as fee handling and delaying transactions. This generally
-    means writing cron jobs, SQL queries, and editing PHP business logic, then
+    processing such as fee handling and delaying transactions. This entailed
+    writing cron jobs, SQL queries, and editing PHP business logic, then
     writing tests (unit, integration, end to end, manual) and making little
     refactors along the way to make it a little less error prone to deal with
     next time.
@@ -58,44 +87,41 @@
     {\bf Software Developer - C++} \>Optiver \>Mar 2014 - Apr 2015\\
                                    \>Sydney, NSW
    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-    Wrote, tested, reviewed, merged and debugged C++ and some Python code for a
-    high frequency trading system. This involved writing performance critical
-    low latency networking, parsing and calculation code and testing this code
-    and others' code using unit tests, automated system tests (setting up mock
-    connections, simulating the market, etc), automated regression tests,
-    market simulations and replays, manual tests and conformance tests with the
-    exchange. I was also involved in the code review process for bug fixes and
-    new features, and I fixed many unreproducible bugs which occured in
-    production caused by race conditions, invalid memory access, incorrect
-    logic, unchecked return codes, and most common of all configuration
-    problems such as inappropriate network settings, incorrect config files and
-    invalid assumptions such as misunderstandings with the exchange. This work
-    was done using Agile methods, such as continuous integration, bug tracking,
-    standups, source control (initially subversion with feature branches, then
-    moving to git with feature branches and release branches), and code
-    reviews, predominantly using Atlassian products to manage this.
+    Worked in the Hong Kong Futures Exchange team, writing exchange connectivity
+    code and autotrader code. Wrote a "market link" microservice to connect to
+    the exchange using a combination of its own SDK plus an in-house reverse
+    engineered nonblocking version of it, and then translate the exchange
+    specific protocol to Optiver's internal generic protocol and expose an
+    endpoint for this using Optiver's internal implementation of user space
+    pipes (shared memory ring buffers) as well as UDP and TCP. Also worked on an
+    exchange simulator, backtester and made a "panic button" service to delete
+    all orders in case of emergency. Finally, worked on the arbitrage logic for
+    one of the autotrader applications, tweaking the paramaters and logic
+    according to human traders' requirements.
    \begin{tabbing}
    \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
     {\bf Programmer - Haskell, C, C++} \>UNSW \>Sep 2013 - Mar 2014\\
                                        \>Kensington, NSW
    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-    Made many major bug fixes and improvements to research software, including
-    fixing various logic errors, inconsistencies and race conditions in a C++
-    GUI program, fixing undefined behavior in a Haskell model checking program,
-    incorporating version control for both of these programs (specifically
-    git), and adding various tests (unit, black box, manual etc). I also
-    participated in discussions relating to further research and innovation and
-    helped implement the associated new algorithms (eg binary decision trees,
-    bounded model checking) and formalisms (mu calculus, buchi automata,
-    incorporating probability etc).
+    Bug fixes, improvements and additional features to a C++ GUI written using
+    the QT library (I wrote negative 2000 LOC on this project). The GUI in
+    question was a frontend to a model checker (formal verification) program
+    like SPIN and as such I also came up with a design proposal to migrate it
+    to a TCL/Tk graphical interface, like SPIN has. The rest of my time was
+    spent bug fixing and adding features to the backing Haskell command line
+    model checker application and adding tests to it. I also integrated the
+    PicoSAT C library as the backing constraint solver for the model checking
+    algorithm.
    \begin{tabbing}
    \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
     {\bf Research Assistant - Java, Perl} \>Smart Services CRC \>Dec 2012 - Mar 2013\\
                                           \>Kensington, NSW
    \end{tabbing}\vspace{-20pt}      % suppress blank line after tabbing
-    Worked on research articles for recommender systems. This included text
-    feature extraction, gathering and analyzing statistics from an Oracle
-    database, reporting on findings and documentation.
+    Data mining tasks for RSVP dating website's recommender system based on
+    decision trees. This involved writing command line java applications and
+    bash/perl scripts to tokenize text data about consumers' hobbies from an
+    Oracle database and put it in a format amenable to machine learning
+    algorithms.
    \begin{tabbing}
    \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
     {\bf Tutor - MS Excel, VBA} \>UNSW     \>2012-2014\\
@@ -109,23 +135,27 @@
     {\bf Programmer - Delphi} \>Mountaintop Systems \> Jan 2011 - Jul 2011\\
                               \>Sutherland, NSW
    \end{tabbing}\vspace{-20pt}
-    Software development, source control, documentation and debugging,
-    using technologies such as Delphi (Pascal), subversion, python, perl and
-    build systems, among others. Fixed various GUI bugs, race conditions, and
-    runtime errors, implemented new features, optimized sql queries, logic
-    functions and gui interactions, and documented various libraries used
-    throughout the point of sales software being developed.
+    Bug fixing and minor feature additions to cash register software written
+    in Delphi. Also improved the test automation and build system.
 
 
 \section{COMPUTER SKILLS}          
-    Good knowledge of unix (bsd sockets) and windows (win32 api) \\
-    Proficient programming skills in C, C++, Golang, Java, (AVR) assembler, Haskell, Lisp, Delphi, Perl, Python, PHP, Javascript, (Visual/Q) BASIC \\
-    Network programming experience with various transport layers using the BSD sockets API and a few other commercial and in-house libraries \\
-    Some unix network diagnostics experience, eg ip route, ifconfig, telnet, ping, netcat \\
-    Basic knowledge and appreciation for Agile methodology, experience and familiarity with Atlassian products, Jenkins, subversion, mercurial, git, darcs, branching models
+    Polyglot programmer: AVR assembler, C, C++, Rust, Golang, Haskell, Python, Clojure and so on \\
+    System administration: Bash, Kubernetes, AWS, Google Cloud \\
+    Network programming: UDP, TCP, packed structs, protobuf, REST \\
+    Concurrency and parallelism: SSE, AVX, threads, shared memory, ring buffers, mutexes \\
+    Scientific computing: BLAS, Gnu Scientific Library, torch, numpy, tensorflow, ROS \\
+    Statistics: regression, kalman filter, Q learning, PID control, gradient boosted decision trees, neural networks
  
  
 \section{HONORS AND AWARDS}          
+    2021: Top 10 of class (out of a few hundred) for machine learning accuracy, as well as for training and inference speed in COMP5318 assignment \\
+    2020: Rokt hackathon Runner Up \\
+    2019: Coursera Machine Learning course \\
+    2019: Scored 96\% on AWS Associate Architect exam \\
+    2019: Professional Scrum Master Level 1 \\
+    2018: Rokt "Golden Coder" award \\
+    2017: Toastmasters Competent Communicator \\
     2014: Runner up in Spectrum Super Smash Brothers Nintendo 64 competition \\
     2013: Graduated with first class honors \\
     2013: Optiver SENG3011 Prize \\
@@ -135,10 +165,11 @@
     2007: Distinguished Achievers List in accelerated HSC Software Design and Development (90/100)
  
 \section{EXTRACURRICULAR ACTIVITIES}          
-    2008-present: UNSW Orchestra, North Sydney Symphony Orchestra, TOPS Orchestra (section leader), various uni revues (band leader) \\
-    2005-2008: Schools Spectacular Stage Band/Orchestra \\
-    2015-present: Toastmasters \\
-    Football for Connells Point Rovers
+    Football for Lidcombe Congs \\
+    Guitar \\
+    2015-2017: Toastmasters \\
+    2008-2015: UNSW Orchestra, North Sydney Symphony Orchestra, TOPS Orchestra (section leader), various uni revues (band leader) \\
+    2005-2008: Schools Spectacular Stage Band/Orchestra
  
 \end{resume}
 \end{document}
